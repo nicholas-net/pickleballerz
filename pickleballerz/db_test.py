@@ -7,6 +7,8 @@ connection = psycopg2.connect(host="localhost", dbname="pickle_db", user="pickle
 curr = connection.cursor()
 curr.execute("""ALTER TABLE players ADD COLUMN DECIMAL dupr_rating""")
 
+curr = connection.cur
+
 
 connection.commit()
 connection.close()
